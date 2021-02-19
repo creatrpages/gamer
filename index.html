@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creatr-Gaming</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/elments.css">
+    <link rel="stylesheet" href="./assets/grid.css">
+    <link rel="stylesheet" href="./assets/typoraphy.css">
+    <link rel="stylesheet" href="./assets/components.css">
+    <link rel="stylesheet" href="./assets/flexbox.css">
+
+</head>
+
+<body bgcolor="black">
+    <nav class="navbar transparent">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">CreatrPages</a>
+            <div class="navbar-burger" data-target="navbarExampleTransparentExample">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-start">
+                    <a class="navbar-item" href="#">Home</a>
+                    <a class="navbar-item" href="#">Latest updates</a>
+                    <a class="navbar-item" href="#">Media</a>
+                    <a class="navbar-item" href="#">About</a>
+
+            </div>
+
+            <div class="navbar-end inline-flex">
+                <div class="navbar-item nav-action">
+                    <a href="#" class="nav-button">Download</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="box">
+        <div class="button-outline">
+            <button class="button">Button</button></div>
+    </div>
+    <div class="box">
+        <div class="col-8">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Title</h3>
+                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt esse voluptates
+                        doloribus quia
+                        provident, placeat libero iure velit labore quos debitis alias optio! Dolore, nisi. Consectetur
+                        cupiditate nemo deleniti rerum!</p>
+
+                    <button class="card-button">BUtton</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+
+                // Add a click event on each of them
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+
+                        // Get the target from the "data-target" attribute
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+
+                        // Toggle the "active" class on both the "navbar-burger" and the "navbar-menu"
+                        el.classList.toggle('active');
+                        $target.classList.toggle('active');
+
+                    });
+                });
+            }
+
+        });
+    </script>
+</body>
+
+</html>

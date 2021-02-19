@@ -1,0 +1,68 @@
+
+.button {
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ece8e1;
+    background-color: #ff4655;
+    padding: 0.4rem 2rem;
+    cursor: pointer;
+    border: 1px solid transparent;
+    outline: none !important;
+    transition: background-color 0.25s ease-out;
+}
+
+.button:hover {
+    outline: none !important;
+    background-color: #0f1923;
+    /* border-color: #ece8e1; */
+}
+
+.button-outline {
+    max-width: fit-content;
+    border: 1px solid #ece8e1;
+    padding: 0.4rem;
+    transition: border-color 0.5s ease;
+}
+
+
+.card {
+    color: #ece8e1;
+    border: 1px solid #ece8e1;
+    padding: 0.4rem;
+    transition: background-color 0.25s ease-out;
+}
+
+.card-body {
+    background-color: #0f1923;
+    padding: 2rem;
+    transition: background-color 0.25s ease-out;
+}
+
+.card-body.hover:hover {
+    background-color: #0f1923;
+}
+
+.card-title {
+    color: #ece8e1;
+}
+
+.card-button {
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ece8e1;
+    background-color: #ff4655;
+    padding: 0.4rem 2rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+    outline: none !important;
+    transition: all 0.5s ease;
+}
+
+.card-button:hover {
+    outline: none !important;
+    color: #ece8e1;
+    border-color: #ff4655;
+    background-color: transparent;
+}
