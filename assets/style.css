@@ -33,7 +33,7 @@ body {
     font-weight: 400;
     text-decoration: inherit;
     text-transform: inherit;
-    color: #424242;
+    color: #ece8e1;
     background-color: #000;
     letter-spacing: normal;
     font-size: 1rem;
@@ -72,6 +72,23 @@ p {
 
 }
 
+hr {
+    box-sizing: content-box;
+    width: 100%;
+    margin: 2rem;
+    border-bottom: 0.1rem solid #ff4655 !important;
+    overflow: visible;
+}
+
+
+hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 0;
+    border-top: 1px solid #eff2f7;
+}
+
+
 article,
 aside,
 figcaption,
@@ -92,22 +109,6 @@ textarea,
 body * {
     font-family: "Roboto", sans-serif;
     box-sizing: border-box;
-}
-
-hr {
-    box-sizing: content-box;
-    width: 100%;
-    margin: 2rem;
-    border-bottom: 0.1rem solid #00000025 !important;
-    overflow: visible;
-}
-
-
-hr {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    border: 0;
-    border-top: 1px solid #eff2f7;
 }
 
 
